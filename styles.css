@@ -2,14 +2,26 @@
     margin: 0;
     padding: 0;
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
+    
     
    }
-   .fecha-titulo{
-    text-align: center;
-    font-size: 2rem;
-    font-family: fantasy;
+   .cabecera{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
    }
+   .tareas-titulo{
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: fantasy;
+    
+   }
+   .container{
+    display: flex;
+    
+   }
+   
   .container1{
    margin-top: 1rem;
    width: 100%;
@@ -29,37 +41,39 @@
     color: black;
     padding: 50px 0 5px 0;
   }
-  .agregar-tarea{
-    display: flex;
-    align-items: center;
-    background: white;
-    width: 35vw;
-    height: 8vh;
-    border-radius: 15px;
-    padding: 2rem;
-    
-    
+  .tareasList {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
     
   }
-  #input{
-    width: 30vw;
-    height: 5vh;
-    border-radius:5px ;
-    border-color: #886fc4 solid 5px;
+  
+  form {
+    display: flex;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: #f69d3c solid 5px;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 15px 10px;
+    width: 500px;
+    outline: none;
   }
   .btn-add {
     padding: 5px 15px;
     color: white;
     border: none;
     font-family: fantasy;
-    background-color: teal;
+    background-color: rgb(122, 159, 43);
     font-size: 1.4rem;
     outline: none;
   }
-  i{
+  /*i{
     font-size: 3rem;
     color: #df6e0c;
-  }
+  }*/
   .agregar-tarea i:hover{
     transform: scale(1.1);
     cursor: pointer;

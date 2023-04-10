@@ -6,8 +6,8 @@ const botonPasar = document.querySelector('#pasar');
 let id =0;
 
 
-const Fecha = new Date();
-fecha.innerHTML= Fecha.toLocaleDateString('es-Ar',{weekday:'long',month:'short',day:'numeric'});
+let Fecha = new Date(Date.UTC);
+fecha.innerHTML =Fecha.toLocaleDateString(undefined,{weekday:'long',month:'short',day:'numeric',year:'numeric'});
 
 //funcion agregar tarea
 function agregarTarea(tarea,id){
