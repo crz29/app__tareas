@@ -2,6 +2,7 @@ const fecha = document.querySelector('#fecha');
 const input = document.querySelector('#input');
 const botonEnter = document.querySelector('#enter');
 const lista = document.querySelector('#lista');
+const botonPasar = document.querySelector('#pasar')
 
 //funcion agregar tarea
 function agregarTarea(tarea){
@@ -21,3 +22,7 @@ botonEnter.addEventListener('click', () =>{//le paso una funcion arrow
     }else{alert("Ingresa una tarea")};
     input.value ='';
 })
+
+
+botonPasar.addEventListener('click',)
+
