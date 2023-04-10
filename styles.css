@@ -3,22 +3,19 @@
     padding: 0;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
-    box-sizing: content-box;
-  }
-  
-  main {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
     
-       
-  }
+   }
+   .fecha-titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-family: fantasy;
+   }
   .container1{
    margin-top: 1rem;
    width: 100%;
    height: 100%;
    justify-content: center;
+   flex-direction: column;
    
   }
   .container2{
@@ -88,8 +85,10 @@
     width: 100%;
     text-align: left;
   }
-  
-  .section-tarea  li{
+  ul{
+    padding: 0;
+  }
+  li{
     display: flex;
     background: linear-gradient(to bottom, #bfc4c6, #f69d3c);
     align-items: center;
