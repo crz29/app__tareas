@@ -2,19 +2,16 @@ const fecha = document.querySelector('#fecha');
 const input = document.querySelector('#input');
 const botonEnter = document.querySelector('#enter');
 const lista = document.querySelector('#lista');
-const botonPasar = document.querySelector('#pasar');
+
 let id =0;
 
 
-let Fecha = new Date(Date.UTC);
-fecha.innerHTML =Fecha.toLocaleDateString(undefined,{weekday:'long',month:'short',day:'numeric',year:'numeric'});
-
 //funcion agregar tarea
-function agregarTarea(tarea,id){
+function agregarTarea(tarea){
     const elemento =`<li id="elemento">
-    <i class="fa-sharp fa-solid fa-circle-check" data="realizado" id=${id}></i>
+    <i class="fa-sharp fa-solid fa-circle-check" data="realizado" id="0"></i>
     <p class="text">${tarea}</p>
-    <i class="fa-solid fa-circle-minus" data="eliminado" id=${id}></i><!--identificador data-->
+    <i class="fa-solid fa-circle-minus" data="eliminado" id="0"></i><!--identificador data-->
 </li>  `
 
     lista.insertAdjacentHTML('beforeend',elemento);
@@ -23,17 +20,11 @@ function agregarTarea(tarea,id){
 botonEnter.addEventListener('click', () =>{//le paso una funcion arrow
     const tarea = input.value;
     if(tarea){
-        agregarTarea(tarea,id,false,false);
+        agregarTarea(tarea);
     }else{alert("Ingresa una tarea")};
     input.value ='';
-    id++;
-})
+   
+});
 
-
-lista.addEventListener('click',function(event) {
-    const element = event.target;
-    const elementData = element.attributes.data.value;
-    if(elementData==='realizado')
-})
 
 //localStorage
